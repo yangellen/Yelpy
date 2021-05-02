@@ -62,7 +62,6 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
 
       //set image for rating
       if let rating = restaurant["rating"] as? Double {
-         print(rating)
 
          switch rating {
          case 0:
