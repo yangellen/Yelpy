@@ -21,6 +21,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantCell" rowHeight="269" id="iCx-Mq-9zh" customClass="RestaurantCell" customModule="Yelpy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="269"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iCx-Mq-9zh" id="NuY-vv-cDh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="env-74-ypy">
+                                                    <rect key="frame" x="212" y="21" width="172" height="238"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="172" id="o5k-Ao-CZS"/>
+                                                        <constraint firstAttribute="height" constant="174" id="xaL-5G-iCC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-gk-T7P">
+                                                    <rect key="frame" x="30" y="21" width="120" height="38.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="env-74-ypy" firstAttribute="leading" secondItem="1vw-gk-T7P" secondAttribute="trailing" constant="62" id="7nv-ot-Hje"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="env-74-ypy" secondAttribute="trailing" constant="10" id="ea6-Eb-BOq"/>
+                                                <constraint firstItem="1vw-gk-T7P" firstAttribute="leading" secondItem="NuY-vv-cDh" secondAttribute="leadingMargin" constant="10" id="gLe-jG-50k"/>
+                                                <constraint firstAttribute="bottom" secondItem="env-74-ypy" secondAttribute="bottom" constant="10" id="kTj-d6-nsA"/>
+                                                <constraint firstItem="1vw-gk-T7P" firstAttribute="top" secondItem="NuY-vv-cDh" secondAttribute="topMargin" constant="10" id="o5O-mQ-vjO"/>
+                                                <constraint firstItem="env-74-ypy" firstAttribute="top" secondItem="NuY-vv-cDh" secondAttribute="topMargin" constant="10" id="uNQ-U4-sx1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="1vw-gk-T7P" id="fhC-A8-iMo"/>
+                                            <outlet property="restaurantImage" destination="env-74-ypy" id="M7g-2B-z2U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
