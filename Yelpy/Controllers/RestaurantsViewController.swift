@@ -52,7 +52,10 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
       let restaurant = restaurantsArray[indexPath.row]
 
       //set label to restaurant name for each cell
-      cell.label.text = restaurant["name"] as? String ?? "No name"
+      cell.label.text = restaurant["name"] as? String ?? ""
+      cell.phone.text = restaurant["phone"] as? String ?? ""
+
+
 
       //set image of restaurant
       if let imageUrlString = restaurant["image_url"] as? String {

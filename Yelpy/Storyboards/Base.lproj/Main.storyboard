@@ -36,24 +36,33 @@
                                                         <constraint firstAttribute="height" constant="174" id="xaL-5G-iCC"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="415-666-6666" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-Ei-iat">
+                                                    <rect key="frame" x="30" y="80.5" width="115.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-gk-T7P">
-                                                    <rect key="frame" x="30" y="21" width="120" height="38.5"/>
+                                                    <rect key="frame" x="30" y="21" width="134.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="env-74-ypy" firstAttribute="leading" secondItem="1vw-gk-T7P" secondAttribute="trailing" constant="62" id="7nv-ot-Hje"/>
+                                                <constraint firstItem="env-74-ypy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1vw-gk-T7P" secondAttribute="trailing" constant="10" id="7nv-ot-Hje"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="env-74-ypy" secondAttribute="trailing" constant="10" id="ea6-Eb-BOq"/>
                                                 <constraint firstItem="1vw-gk-T7P" firstAttribute="leading" secondItem="NuY-vv-cDh" secondAttribute="leadingMargin" constant="10" id="gLe-jG-50k"/>
                                                 <constraint firstAttribute="bottom" secondItem="env-74-ypy" secondAttribute="bottom" constant="10" id="kTj-d6-nsA"/>
+                                                <constraint firstItem="awK-Ei-iat" firstAttribute="top" secondItem="1vw-gk-T7P" secondAttribute="bottom" constant="40" id="lUT-AW-tyv"/>
                                                 <constraint firstItem="1vw-gk-T7P" firstAttribute="top" secondItem="NuY-vv-cDh" secondAttribute="topMargin" constant="10" id="o5O-mQ-vjO"/>
                                                 <constraint firstItem="env-74-ypy" firstAttribute="top" secondItem="NuY-vv-cDh" secondAttribute="topMargin" constant="10" id="uNQ-U4-sx1"/>
+                                                <constraint firstItem="awK-Ei-iat" firstAttribute="leading" secondItem="NuY-vv-cDh" secondAttribute="leadingMargin" constant="10" id="xrB-Xr-CoH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="1vw-gk-T7P" id="fhC-A8-iMo"/>
+                                            <outlet property="phone" destination="awK-Ei-iat" id="dgi-t2-Aj4"/>
                                             <outlet property="restaurantImage" destination="env-74-ypy" id="M7g-2B-z2U"/>
                                         </connections>
                                     </tableViewCell>
