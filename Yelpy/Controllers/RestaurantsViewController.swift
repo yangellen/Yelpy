@@ -53,8 +53,19 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
 
       //set label to restaurant name for each cell
       cell.label.text = restaurant["name"] as? String ?? ""
+
+      //set label to phone number
       cell.phone.text = restaurant["phone"] as? String ?? ""
 
+      //set label for categories
+      cell.categories.text = restaurant["price"] as? String ?? ""
+
+      //set image for rating
+      if let rating = restaurant["rating"] as? Double {
+         print(rating)
+
+        //
+      }
 
 
       //set image of restaurant
