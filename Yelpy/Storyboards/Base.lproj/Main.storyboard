@@ -40,7 +40,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5OB-bU-kis">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5OB-bU-kis">
                                                     <rect key="frame" x="30" y="89.5" width="139" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="139" id="Ze5-Qe-eHD"/>
@@ -53,7 +53,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="env-74-ypy">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="env-74-ypy">
                                                     <rect key="frame" x="172.5" y="21" width="211.5" height="272"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="env-74-ypy" secondAttribute="height" multiplier="185:238" id="nVb-ps-XCh"/>
