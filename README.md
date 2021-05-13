@@ -1,4 +1,4 @@
-# Yelpy Part I
+# Yelpy 
 An app that allows users to view restaurants from Yelp.
 
 ## User Stories
